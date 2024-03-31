@@ -41,7 +41,7 @@ namespace SimpleATM.Forms
         private void BtnBalance_Click(object sender, EventArgs e)
         {
             var balance = _userAccount.Balance;
-            MessageBox.Show(balance.ToString());
+            MessageBox.Show("Current Balance: " + balance.ToString(), "Balance", MessageBoxButtons.OK);
         }
 
         private void BtnWithdraw_Click(object sender, EventArgs e)
